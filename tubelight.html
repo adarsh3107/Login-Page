@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="tubelight.css">
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<body>
+
+<div class="login-box">
+  <h2>Login</h2>
+  <form class="login">
+    <div class="user-box">
+      <input type="text" class="name" name="" required="">
+      <label>Name</label>
+    </div>
+    <div class="user-box">
+      <input type="text" class="M" name="" required="">
+      <label>Mobile No.</label>
+    </div>
+    <div class="user-box">
+      <label >DOB</label><br>
+      <input type="date" class="birthday" name="birthday">
+    </div>
+    <div class="user-bo">
+      <label >Nature of Income</label><br><br>
+      <select class="income" name="income">
+          <option value="">select</option>
+          <option value="b">Saab</option>
+          <option value="c">Fiat</option>
+          <option value="d">Audi</option>
+      </select>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div class="user-bo">
+       <label >Type of loan required</label>
+       <br>
+       <br>
+       <select class="loan" name="loan">
+          <option value="">select</option>
+          <option value="b">Saab</option>
+          <option value="c">Fiat</option>
+          <option value="c">Audi</option>
+       </select>
+      <br>
+      <br>
+      
+    </div>
+    <a id="btn" href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      APPLY
+    </a>
+    
+
+  </form>
+</div>
+  <div class="bottom">
+    <div class="main">
+      <div class="firework-1"></div>
+      <div class="firework-2"></div>
+      <div class="firework-3"></div>
+      <div class="firework-4"></div>
+      <div class="firework-5"></div>
+      <div class="firework-6"></div>
+      <div class="firework-7"></div>
+      <div class="firework-8"></div>
+      <div class="firework-9"></div>
+      <div class="firework-10"></div>
+      <div class="firework-11"></div>
+      <div class="firework-12"></div>
+      <div class="firework-13"></div>
+      <div class="firework-14"></div>
+      <div class="firework-15"></div>
+      <div class="title">Congratulations <span class="emoji">&#9989;</span></div>
+    </div>  
+  </div>
+  
+   
+  
+
+<script type="text/javascript">
+  $("#btn").click(function(){
+     if($(".name").val() == ""){
+      alert("input required");
+      return false;
+     }
+     else if($(".M").val() == ""){
+      alert("input required");
+      return false;
+     }
+     else if($(".birthday").val() == ""){
+      alert("input required");
+      return false;
+     }
+     else if($(".income").val() == ""){
+      alert("input required");
+      return false;
+     }
+     else if($(".loan").val() == ""){
+      alert("input required");
+      return false;
+     }
+     $(".bottom").show();
+     $(".login-box").hide();
+  });
+</script>
+
+
+
+</body>
+</html>
